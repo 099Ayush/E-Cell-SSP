@@ -1,3 +1,8 @@
+body {
+    font-family: Lato;
+    overflow: hidden;
+}
+
 #welcome {
     position: fixed;
     top: 0;
@@ -6,7 +11,7 @@
     right: 0;
     background: linear-gradient(#000000ee, #000000dd), url('../images/bg-img.jpg');
     background-size: cover;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .ml4 {
@@ -113,9 +118,10 @@
     overflow: hidden;
     width: 350px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #3338;
     text-align: center;
     padding: 40px;
+    transition: all 0.25s;
     transform: scale(0.8);
 }
 
@@ -130,6 +136,10 @@
 }
 
 @media screen and (max-width: 1127px) {
+    #welcome {
+        overflow: auto;
+    }
+
     #intro {
         margin: auto;
     }
@@ -138,10 +148,7 @@
     }
     .card {
         display: initial;
-        background-color: #0008;
-    }
-    #init {
-        display: none;
+        background-color: #3338;
     }
 }
 
@@ -151,12 +158,16 @@
         text-align: center;
         padding-bottom: 10px;
     }
+    #init {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1127px) {
     #vision {
         right: 20vw;
         top: 1vh;
+        padding: 50px;
     }
     #mission {
         right: 2vw;
@@ -167,5 +178,9 @@
         right: 17vw;
         top: 50vh;
         padding: 60px;
+    }
+    .circles:hover {
+        transform: scale(1);
+        box-shadow: 0 0 20px #000;
     }
 }
