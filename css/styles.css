@@ -11,7 +11,7 @@ body {
     right: 0;
     background: linear-gradient(#000000ee, #000000dd), url('../images/bg-img.jpg');
     background-size: cover;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .ml4 {
@@ -137,7 +137,7 @@ body {
 
 @media screen and (max-width: 1127px) {
     #welcome {
-        overflow: auto;
+        overflow-y: auto;
     }
 
     #intro {
