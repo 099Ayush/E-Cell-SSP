@@ -91,7 +91,7 @@ body {
     transition: 0.5s all;
 }
 
-.nav-link:hover {
+.nav-link:active, .nav-link:hover {
     color: #fff;
     text-shadow: 0 0 5px;
 }
@@ -108,7 +108,7 @@ body {
     transition: all 0.3s;
 }
 
-.nav-link:hover::before {
+.nav-link:active::before {
     visibility: visible;
     transform: scaleX(1);
 }
@@ -182,5 +182,9 @@ body {
     .circles:hover {
         transform: scale(1);
         box-shadow: 0 0 20px #000;
+    }
+    .nav-link:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
     }
 }
