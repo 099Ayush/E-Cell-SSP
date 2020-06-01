@@ -123,6 +123,7 @@ body {
     padding: 40px;
     transition: all 0.25s;
     transform: scale(0.8);
+    cursor: default;
 }
 
 .card {
