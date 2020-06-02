@@ -164,6 +164,16 @@ body {
     }
 }
 
+::selection {
+    color: black;
+    background: #fffe;
+}
+
+::-moz-selection {
+    color: black;
+    background: #fffe;
+}
+
 @media screen and (min-width: 1127px) {
     #vision {
         right: 20vw;
