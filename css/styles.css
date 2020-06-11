@@ -43,6 +43,7 @@ body {
     padding: 20px;
     width: 150px;
     display: table-cell;
+    user-select: none;
     filter: drop-shadow(0 0 1px);
 }
 
@@ -133,7 +134,8 @@ body {
 #type-parent {
     position: fixed;
     right: 1vw;
-    top: 20px
+    top: 20px;
+    z-index: 1000;
 }
 
 @media screen and (max-width: 1127px) {
@@ -149,7 +151,13 @@ body {
     }
     .card {
         display: initial;
+        transform: scale(0.9);
+        transition: all 0.25s;
         background-color: #3338;
+    }
+    .card:hover {
+        transform: scale(1);
+        box-shadow: 0 0 20px #000;
     }
 }
 
