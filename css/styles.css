@@ -1,5 +1,5 @@
 body {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     overflow: hidden;
 }
 
@@ -82,17 +82,18 @@ body {
 }
 
 .nav-link {
-    color: white;
-}
-
-.nav-link {
+    color: #fff;
     position: relative;
     display: inline-block;
     vertical-align: middle;
     transition: 0.5s all;
 }
 
-.nav-link:active, .nav-link:hover {
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link:active {
     color: #fff;
     text-shadow: 0 0 5px;
 }
@@ -201,6 +202,10 @@ body {
     .circles:hover {
         transform: scale(1);
         box-shadow: 0 0 20px #000;
+    }
+    .nav-link:hover {
+        color: #fff;
+        text-shadow: 0 0 5px;
     }
     .nav-link:hover::before {
         visibility: visible;
